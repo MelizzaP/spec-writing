@@ -40,3 +40,11 @@ describe 'Exercise 4' do
     expect(result).to eq(5)
   end
 end
+
+describe 'Exercise 5' do
+  it 'prints each element of an array' do
+    STDOUT.should_receive(:puts).with('hello')
+    STDOUT.should_receive(:puts).with('bye')  
+    result = Exercises.ex5(['hello','bye'])
+  end
+end
