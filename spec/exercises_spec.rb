@@ -59,5 +59,11 @@ describe 'Exercise 6' do
     result = Exercises.ex6([1,1,'panda'])
     expect(result).to eq([1,1,'GODZILLA'])
   end
-end   
+end  
 
+describe 'Exercise 7' do
+  it 'adds a string to the end of array if the array contains the string' do
+    result = Exercises.ex7([1,2,'hi',3],'hi')
+    expect(result).to eq([1,2,'hi',3,'hi'])
+  end
+end
