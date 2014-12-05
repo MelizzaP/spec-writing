@@ -108,3 +108,17 @@ describe 'Exercise 10' do
     expect(result).to eq('normal prices')
   end
 end
+
+describe 'Exercise 11' do
+  it 'returns the sum of two numbers if they are integers' do
+    result = Exercises.ex11(1,2)
+    expect(result).to eq(3)
+  end
+  
+  it 'raise error if 2 inputs are not integers' do
+    result = Exercises.ex11('foo','bar')
+    expect(result).to eq('Error not integers')
+  end
+end 
+     
+  

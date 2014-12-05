@@ -103,8 +103,13 @@ module Exercises
   # Exercise 11
   #  - Returns the sum of two numbers if they are both integers
   #  - Raises an error if both numbers are not integers
-  def self.ex11
-    # TODO
+  def self.ex11(input1,input2)
+    sum = input1+input2
+    if sum.to_i == sum
+      sum
+    else
+      'Error not integers'
+    end
   end
   
   # Exercise 12
