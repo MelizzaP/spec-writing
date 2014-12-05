@@ -108,7 +108,7 @@ module Exercises
     if sum.to_i == sum
       sum
     else
-      'Error not integers'
+      raise 'you suck'
     end
   end
   

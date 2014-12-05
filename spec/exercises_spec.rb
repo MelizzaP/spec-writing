@@ -116,8 +116,7 @@ describe 'Exercise 11' do
   end
   
   it 'raise error if 2 inputs are not integers' do
-    result = Exercises.ex11('foo','bar')
-    expect(result).to eq('Error not integers')
+    expect{ Exercises.ex11('foo','bar')}.to raise_error
   end
 end 
 
@@ -128,9 +127,9 @@ describe 'Exercise 12' do
   end
 end
   
-describe 'Extremes' do
-  xit 'takes an array of strings and returns the most and the least occuring  values' do
-    result = Extentions.extremes(['x','x','x','a','a','y','z'])
-    expects(result).to eq({:most => 'x', :least => ['y','z']}
-  end
-end
+# describe 'Extremes' do
+#   xit 'takes an array of strings and returns the most and the least occuring  values' do
+#     result = Extentions.extremes(['x','x','x','a','a','y','z'])
+#     expects(result).to eq({:most => 'x', :least => ['y','z']}
+#   end
+# end
