@@ -67,3 +67,11 @@ describe 'Exercise 7' do
     expect(result).to eq([1,2,'hi',3,'hi'])
   end
 end
+
+describe 'Exercise 8' do
+  it 'prints out an array of hashes' do
+    STDOUT.should_receive(:puts).with('bob - builder')
+    STDOUT.should_receive(:puts).with('mike - hat')
+    result = Exercises.ex8([{name: 'bob', occupation: 'builder'},{name: 'mike', occupation: 'hat'}])
+  end
+end
