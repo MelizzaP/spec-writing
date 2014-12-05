@@ -76,7 +76,15 @@ module Exercises
   #    Otherwise, returns `false`
   # Hint: Google for the wikipedia article on leap years
   def self.ex9(time)
-    # TODO
+    if time%4 != 0
+      false
+    elsif time%100 != 0
+      true
+    elsif time%400 != 0
+      false
+    else 
+      true
+    end
   end
 
   # Exercise 10

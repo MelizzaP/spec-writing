@@ -75,3 +75,10 @@ describe 'Exercise 8' do
     result = Exercises.ex8([{name: 'bob', occupation: 'builder'},{name: 'mike', occupation: 'hat'}])
   end
 end
+
+describe 'Exercise 9' do
+  it 'returns true if date given is a leap year false if not' do
+    result = Exercises.ex9(2000)
+    expect(result).to eq(true)
+  end
+end
