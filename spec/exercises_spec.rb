@@ -120,5 +120,17 @@ describe 'Exercise 11' do
     expect(result).to eq('Error not integers')
   end
 end 
-     
+
+describe 'Exercise 12' do
+  it 'takes 2 characters and returns an array of the characters between' do 
+    result = Exercises.ex12('d','g')
+    expect(result).to eq(['d','e','f','g'])
+  end
+end
   
+describe 'Extremes' do
+  xit 'takes an array of strings and returns the most and the least occuring  values' do
+    result = Extentions.extremes(['x','x','x','a','a','y','z'])
+    expects(result).to eq({:most => 'x', :least => ['y','z']}
+  end
+end
