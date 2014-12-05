@@ -92,7 +92,12 @@ module Exercises
   #    Otherwise, returns "normal prices"
   # Hint: Read the "Stubbing" documentation on the Learn app.
   def self.ex10
-    # TODO
+    time = Time.now
+    if time.hour >= 16 && time.hour <= 18
+      'happy hour'
+    else
+      'normal prices'
+    end
   end
   
   # Exercise 11

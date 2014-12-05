@@ -77,8 +77,34 @@ describe 'Exercise 8' do
 end
 
 describe 'Exercise 9' do
-  it 'returns true if date given is a leap year false if not' do
+  it 'returns true if date given is a leap year' do
+    result = Exercises.ex9(1988)
+    expect(result).to eq(true)
     result = Exercises.ex9(2000)
     expect(result).to eq(true)
+  end
+  
+  it 'returns false if date given is not a leap year' do
+    result = Exercises.ex9(2001)
+    expect(result).to eq(false)
+    result = Exercises.ex9(2100)
+    expect(result).to eq(false)
+  end
+end
+
+describe 'Exercise 10' do
+  it 'returns happy hour if the current time is between 4 and 6' do
+    my_time =  Time.new(2008,6,21, 16,30,0)
+    allow(Time).to receive(:now).and_return(my_time)
+    result = Exercises.ex10()
+ #    expect(@time).to eq(my_time)
+    expect(result).to eq('happy hour')
+  end
+  
+  it 'returns normal prices if the time is not between 4 and 6PM' do
+    my_time = Time.new(2014,6,21, 13,30,0)
+    allow(Time).to receive(:now).and_return(my_time)
+    result = Exercises.ex10()
+    expect(result).to eq('normal prices')
   end
 end
